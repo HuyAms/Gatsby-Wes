@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/huytrinh/Desktop/projects/gatsby-wesbos/gatsby-wes/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/huytrinh/Desktop/projects/gatsby-wesbos/gatsby-wes/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{

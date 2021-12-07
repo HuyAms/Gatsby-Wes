@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+import SEO from '../components/SEO';
 
 const PizzaGrid = styled.div`
   display: grid;
@@ -13,6 +14,7 @@ export default function SinglePizzaPage({ data: { pizza } }) {
   console.log(pizza);
   return (
     <>
+      <SEO title={pizza.name} image={pizza.image?.asset?.fluid?.src} />
       <PizzaGrid>
         <Img fluid={pizza.image.asset.fluid} />
         <div>
